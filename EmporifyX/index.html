@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>EmporifyX</title>
+
+    <!-- for wave svgs -->
+    <style>
+        .spacer{
+            aspect-ratio: 960/100;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer-1{
+            background-image: url(Assets/layered-waves-haikei\(1\).svg);
+        }
+        .layer-2 {
+            background-image: url(Assets/layered-waves-haikei\(2\).svg);
+        }
+        .layer-3 {
+            background-image: url(Assets/layered-waves-haikei\(3\).svg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div id="logo">
+            <img src="Assets/Logos/logo.png" alt="EmporifyX Logo">
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#shop-section">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-info"></i> -->
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                        </span>
+                        <span class="text">Categories</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#gallery">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-book"></i> -->
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </span>
+                        <span class="text">Hot-Picks</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#sale-section">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-headphones"></i> -->
+                            <ion-icon name="flash-outline"></ion-icon>
+                        </span>
+                        <span class="text">Sale</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#logo-scroller">
+                        <span class="icon">
+                            <!-- <i class="fa-solid fa-book"></i> -->
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="text">Partners</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+        <!-- Cart and Menu Icons -->
+        <div class="nav-icons">
+            <ion-icon name="cart-outline"></ion-icon>
+            <a href="login.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </a>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink() {
+                list.forEach((item) => item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) => item.addEventListener('click', activeLink));
+        </script>
+    </header>
+    
+    <!--                   hero-section                  -->
+    <div id="hero-section"></div>
+    <div class="logo-new"></div>
+
+    <!-- curve svg1 -->
+    <div class="spacer layer-1"></div>
+
+    <h1 class="title">PERSONALISED COLLECTIONS!</h1>
+
+    <div id="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Fashion</h2>
+                <div class="box-img" style="background-image: url('Assets/fashion.jpg')"></div>
+            </div>
+        </div>
+
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('Assets/gadgets.jpg')"></div>
+            </div>
+        </div>
+
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Stationary</h2>
+                <div class="box-img" style="background-image: url('Assets/stationary.jpg')"></div>
+            </div>
+        </div>
+
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Skincare</h2>
+                <div class="box-img" style="background-image: url('Assets/cosmetics.jpg')"></div>
+                <!-- <p>See more</p> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- curve svg1 -->
+    <div class="spacer layer-2"></div>
+
+    
+    
+    
+    <!--              brand-grid               -->
+
+    <h1 class="title">NEW ARRIVALS</h1>
+
+    <div id="gallery">
+        <div class="gal-box row-2" style="background-image: url('Assets/levis.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+        <div class="gal-box col-2" style="background-image: url('Assets/gucci.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+        <div class="gal-box" style="background-image: url('Assets/rabbit.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+        <div class="gal-box row-2" style="background-image: url('Assets/adidas.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+        <div class="gal-box col-2" style="background-image: url('Assets/casio.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+        <div class="gal-box" style="background-image: url('Assets/woodland.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+        <div class="gal-box col-2" style="background-image: url('Assets/nike.png');">
+            <span class="explore-text">Explore</span>
+        </div>
+    </div>
+
+
+    <!-- curve-3 -->
+   <div class="spacer layer-1"></div>
+
+
+
+    
+   
+   <!--              Products section             -->
+    
+    <h1 class="title">BROWSE STORE</h1>
+
+    <section id="product-section">
+        <div id="gallery-category">
+            <div class="gal-box-2 row-2 bg-black" style="background-image: url('Assets/watch (1).png');">
+                <button class="explore-button-text">Explore</span>
+            </div>
+            <div class="gal-box-2 row-2" style="background-image: url('Assets/phone (1).png');">
+                <button class="explore-button-text">Explore</span>
+            </div>
+            <div class="gal-box-2 row-2 col-2" style="background-image: url('Assets/laptop(1).png');">
+                <button class="explore-button-text">Explore</span>
+            </div>
+            <div class="gal-box-2 row-2 col-2" style="background-image: url('Assets/men.png');">
+                <button class="explore-button-text">Explore</span>
+            </div>
+            <div class="gal-box-2 row-2" style="background-image: url('Assets/women (1).png');">
+                <button class="explore-button-text">Explore</span>
+            </div>
+            <div class="gal-box-2 row-2" style="background-image: url('Assets/shoe(1).png');">
+                <button class="explore-button-text">Explore</span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--                sale banner              -->
+    
+    <div id="sale-section">
+        <img src="Assets/blue-heaphones.png" alt="blue-heaphones">
+    </div>
+
+
+
+
+    <!--             Collaborator infinity scroll            -->
+
+    <div class="spacer layer-1"></div>
+
+    <h1 class="title">OUR PARTNERS</h1>
+
+    <div id="logo-scroller">
+        <div class="logos-slide">
+            <img src="Assets/Logos/zara-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/adidas-9-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/nike-3-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/apple-11-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/samsung-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/levis-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/sony-2-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/lenovo-1-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/puma-logo-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/asus-6630-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/hp-svgrepo-com.svg">
+            <img src="Assets/Logos/nokia-3-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/xiaomi-logo-svgrepo-com.svg">
+        </div>
+        <div class="logos-slide">
+            <img src="Assets/Logos/zara-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/adidas-9-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/nike-3-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/apple-11-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/samsung-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/levis-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/sony-2-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/lenovo-1-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/puma-logo-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/asus-6630-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/hp-svgrepo-com.svg">
+            <img src="Assets/Logos/nokia-3-logo-svgrepo-com.svg">
+            <img src="Assets/Logos/xiaomi-logo-svgrepo-com.svg">
+        </div>
+    </div>
+
+    <!--           Footer            -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li>
+                <a href="" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-section">Categories</a></li>
+            <li><a href="#products-section">Sale</a></li>
+            <li><a href="#features-section">Hot-Picks</a></li>
+            <li><a href="#features-section">Tracking</a></li>
+        </ul>
+        <p>© Anchit Das | Cipherbyte Intership Project(Web Dev)</p>
+    </footer>    
+</body>
+</html>

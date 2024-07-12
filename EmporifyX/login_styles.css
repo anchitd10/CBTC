@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #ff8c6b;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    height: 640px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3.3rem;
+    box-shadow: 0 60px 40px -20px rgba(0, 0, 0, 0.27);
+}
+
+.inner-box {
+    position: absolute;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.forms-wrap {
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    top: 0;
+    left: 0;
+}
+
+.carousel{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    background-image: url("Assets/glass-2557577.jpg");
+    background-size: cover;
+    border-radius: 2rem;
+    background-position: center;
+}
+
+form {
+    max-width: 300px;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-left: 75px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin: 0.5rem;
+}
+
+.heading h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.input-wrap {
+    position: relative;
+    height: 37px;
+    margin-bottom: 2rem;
+}
+
+.input-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+    padding: 0;
+    font-size: 0.95rem;
+    color: black;
+}
+
+label {
+    position: absolute;
+    font-weight: 500;
+    left: 0;
+    top: 0%;
+    padding-bottom: 0.8rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.register {
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    border-radius: 2rem;
+    background-color: #000000;
+    color: white;
+    transition: 0.3s;
+}
+
+.register:hover {
+    background-color: rgb(6, 172, 209);
+    border: none;
+}
+
+#log-in{
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(20, 19, 37);
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+#log-in:hover {
+    color: rgb(70, 120, 185);
+    transition: 0.5s ease-in;
+}
+
+.carousel {
+    /* background-color: blueviolet; */
+    background-color: rgb(138, 222, 194);
+    width: 30%;
+    top: 40px;
+    height: 100%;
+    /* background-image: url("Assets/glass-2557577.jpg"); */
+    background-size: cover;
+    width: fit-content;
+    height: fit-content;
+}
