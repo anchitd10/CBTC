@@ -21,7 +21,7 @@
                     <form action="index.html" class="sign-in" onsubmit="return validateForm()">
                         <div class="logo">
                             <img src="Assets/Logos/logo.png" alt="Logo">
-                            <h3>Login Portal</h3>
+                            <h3>Sign-up Portal</h3>
                         </div>
 
                         <div class="heading">
@@ -29,8 +29,18 @@
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
+                                <input type="text" class="input-field" id="name" required>
+                                <label for="name">Name</label>
+                            </div>
+
+                            <div class="input-wrap">
                                 <input type="email" class="input-field" id="email" required>
                                 <label for="email">Email</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="number" class="input-field" id="phone" required>
+                                <label for="phone">Phone Number</label>
                             </div>
 
                             <div class="input-wrap">
@@ -38,7 +48,13 @@
                                 <label for="password">Password</label>
                             </div>
 
-                            <input type="submit" value="Log-In" class="register">
+                            <div class="input-wrap">
+                                <input type="password" class="input-field" id="confirm-password" required>
+                                <label for="confirm-password">Confirm Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign-Up" class="register">
+                            <a id="log-in" href='login.html'>Already have an account?</a>
                         </div>
                     </form>
                 </div>

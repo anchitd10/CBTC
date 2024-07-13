@@ -65,7 +65,7 @@ const Weather = () => {
                 icon: currentIcon,
             });
 
-            // Extract 4 days forecast from forecast data
+            // Next 4 days weather data
             const dailyForecast = forecastData.list.filter((item) =>
                 item.dt_txt.includes('12:00:00')
             ).slice(1, 5).map((item) => {
